@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+ 
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+
+      
+
+      
+        <h1> Welcome to QuantifiedSelf</h1>
+      
+      
+      <div class="col-sm-3 d-flex justify-content-center">
+        <h3><a href="/signup">Join Us</a></h3>
+        </div><div>
+        <h3><a href="/">Log In</a></h3>
+      </div>
+      
+    </nav>
+    <div>
+        <img src="../static/images.png" alt="graph" >
+    </div>
+    <div style="width:800px; margin:0 auto;">
+    <div class="card" style="width:rem;">
+        <div class="card-body">
+          <h3 class="card-title">QuantifiedSelf App</h3>
+          
+          <p class="card-text">Used for self tracking - tracking habits, activities, other life parameters etc.</p>
+
+        </div>
+      </div>
+
+      
+      <div class="card" style="width: rem;">
+      <button type="button" class="collapsible"><b>Temperature Tracker</b></button>
+      <div class="content">
+        <p class="card-text">LCan be used to log daily temperature by covid patients</p>
+      </div>
+      <button type="button" class="collapsible"><b>Running Tracker
+    </b></button>
+      <div class="content">
+        <p class="card-text">Can be used to log daily running by anyone.</p>
+      </div>
+      <button type="button" class="collapsible"><b>Mood Tracker</b>
+    </button>
+      <div class="content">
+        <p class="card-text">Can be used to log mood multiple times a day</p>
+      </div>
+      <button type="button" class="collapsible"><b>Expense Tracker</b>
+      </button>
+        <div class="content">
+          <p class="card-text">Can be used to log expenses multiple times a day</p>
+        </div>
+        <button type="button" class="collapsible"><b>Weight  Tracker</b>
+        </button>
+          <div class="content">
+            <p class="card-text">Can be used to log weight to keep track of weight</p>
+          </div>
+          <button type="button" class="collapsible"><b>Screen Time Tracker</b>
+          </button>
+            <div class="content">
+              <p class="card-text">Can be used to log the time you spend on the screen</p>
+            </div>
+            <button type="button" class="collapsible"><b>Study Tracker</b>
+            </button>
+              <div class="content">
+                <p class="card-text">Can be used to log the time you spend studying and tracking your efficiency</p>
+              </div>
+    </div>
+</div>
+
+
+
+      
+      <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+</body>
+</html>
